@@ -24,6 +24,8 @@ $ go run beego.go
 
 ### Curl API
 
+Test the index
+
 ```shell
 curl http://localhost:8080/greeter
 ```
