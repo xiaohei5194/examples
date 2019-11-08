@@ -10,6 +10,16 @@ exclude sourcegraph.com/sourcegraph/go-diff v0.5.1
 
 replace github.com/nats-io/nats.go v1.8.2-0.20190607221125-9f4d16fe7c2d => github.com/nats-io/nats.go v1.8.1
 
+replace k8s.io/api => k8s.io/api v0.0.0-20190708174958-539a33f6e817
+
+replace k8s.io/apimachinery => k8s.io/apimachinery v0.0.0-20190404173353-6a84e37a896d
+
+replace k8s.io/apiserver => k8s.io/apiserver v0.0.0-20190708180123-608cd7da68f7
+
+replace k8s.io/client-go => k8s.io/client-go v11.0.0+incompatible
+
+replace k8s.io/component-base => k8s.io/component-base v0.0.0-20190708175518-244289f83105
+
 require (
 	github.com/99designs/gqlgen v0.9.1
 	github.com/astaxie/beego v1.12.0
@@ -24,7 +34,7 @@ require (
 	github.com/gorilla/context v1.1.1 // indirect
 	github.com/gorilla/rpc v1.2.0
 	github.com/gorilla/websocket v1.4.0
-	github.com/grpc-ecosystem/grpc-gateway v1.9.2
+	github.com/grpc-ecosystem/grpc-gateway v1.9.5
 	github.com/hailocab/go-geoindex v0.0.0-20160127134810-64631bfe9711
 	github.com/lusis/go-slackbot v0.0.0-20180109053408-401027ccfef5 // indirect
 	github.com/lusis/slack-test v0.0.0-20190426140909-c40012f20018 // indirect
@@ -40,3 +50,5 @@ require (
 	google.golang.org/genproto v0.0.0-20190801165951-fa694d86fc64
 	google.golang.org/grpc v1.22.1
 )
+
+go 1.13
