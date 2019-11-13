@@ -18,7 +18,7 @@ Example usage of top level service initialisation
 
 type Greeter struct{}
 
-func (g *Greeter) Hello(ctx context.Context, req *proto.HelloRequest, rsp *proto.HelloResponse) error {
+func (g *Greeter) Hello(ctx context.Context, req *proto.Request, rsp *proto.Response) error {
 	rsp.Greeting = "Hello " + req.Name
 	return nil
 }
@@ -29,7 +29,7 @@ func runClient(service micro.Service) {
 	greeter := proto.NewGreeterService("greeter", service.Client())
 
 	// Call the greeter
-	rsp, err := greeter.Hello(context.TODO(), &proto.HelloRequest{Name: "John"})
+	rsp, err := greeter.Hello(context.TODO(), &proto.Request{Name: "John"})
 	if err != nil {
 		fmt.Println(err)
 		return
