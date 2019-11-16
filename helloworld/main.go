@@ -17,7 +17,7 @@ func (g *Greeter) Hello(ctx context.Context, req *proto.HelloRequest, rsp *proto
 
 func main() {
 	service := micro.NewService(
-		micro.Name("greeter"),
+		micro.Name("helloworld"),
 	)
 
 	service.Init()

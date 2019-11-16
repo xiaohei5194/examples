@@ -17,11 +17,11 @@ Install the following
 ## Run Service
 
 ```shell
-go run main.go
+micro run service --name helloworld
 ```
 
 ## Query Service
 
 ```
-micro call greeter Greeter.Hello '{"name": "John"}'
+micro call helloworld Greeter.Hello '{"name": "John"}'
 ```
