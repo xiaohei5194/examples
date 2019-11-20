@@ -9,5 +9,5 @@ message Request {
 }
 
 message Response {
-	string greeting = 2;
+	string greeting = 1;
 }
