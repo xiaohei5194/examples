@@ -27,9 +27,9 @@ func main() {
 	service.Init()
 
 	// Generate a service account
-	sa, err := a.Generate(&auth.ServiceAccount{
+	sa, err := a.Generate(&auth.Account{
 		Parent: &auth.Resource{
-			Type: "user", Id: "asim@micro.mu",
+			Type: "user", Name: "asim@micro.mu",
 		},
 		Roles: []*auth.Role{
 			&auth.Role{
@@ -39,7 +39,7 @@ func main() {
 				Name: "contributor",
 				Resource: &auth.Resource{
 					Type: "service",
-					Id:   "go.micro.srv.foobar",
+					Name: "go.micro.srv.foobar",
 				},
 			},
 		},
