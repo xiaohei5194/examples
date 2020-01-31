@@ -33,7 +33,9 @@ require (
 	github.com/pborman/uuid v1.2.0
 	github.com/shiena/ansicolor v0.0.0-20151119151921-a422bbe96644 // indirect
 	github.com/vektah/gqlparser v1.2.0
-	golang.org/x/net v0.0.0-20191108063844-7e6e90b9ea88
-	google.golang.org/genproto v0.0.0-20191028173616-919d9bdd9fe6
-	google.golang.org/grpc v1.25.0
+	golang.org/x/net v0.0.0-20200114155413-6afb5195e5aa
+	google.golang.org/genproto v0.0.0-20191216164720-4f79533eabd1
+	google.golang.org/grpc v1.26.0
 )
+
+replace github.com/micro/go-micro => ../go-micro
