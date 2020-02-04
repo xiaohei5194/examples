@@ -4,13 +4,13 @@ import (
 	"context"
 	"log"
 
-	proto "github.com/micro/examples/helloworld/proto"
-	"github.com/micro/go-micro"
+	pb "github.com/micro/examples/helloworld/proto"
+	"github.com/micro/go-micro/v2"
 )
 
 type Greeter struct{}
 
-func (g *Greeter) Hello(ctx context.Context, req *proto.HelloRequest, rsp *proto.HelloResponse) error {
+func (g *Greeter) Hello(ctx context.Context, req *pb.Request, rsp *pb.Response) error {
 	rsp.Greeting = "Hello " + req.Name
 	return nil
 }
@@ -22,7 +22,7 @@ func main() {
 
 	service.Init()
 
-	proto.RegisterGreeterHandler(service.Server(), new(Greeter))
+	pb.RegisterGreeterHandler(service.Server(), new(Greeter))
 
 	if err := service.Run(); err != nil {
 		log.Fatal(err)
