@@ -8,8 +8,8 @@ import (
 	hello "github.com/micro/examples/greeter/srv/proto/hello"
 	"github.com/micro/go-micro/v2"
 	"github.com/micro/go-micro/v2/errors"
-	"github.com/micro/go-plugins/wrapper/select/shard"
-	api "github.com/micro/micro/api/proto"
+	shard "github.com/micro/go-plugins/wrapper/select/shard/v2"
+	api "github.com/micro/micro/v2/api/proto"
 
 	"context"
 )
