@@ -99,7 +99,7 @@ go get github.com/golang/protobuf/{proto,protoc-gen-go}
 ```
 
 ```shell
-go get github.com/micro/protoc-gen-micro
+go get github.com/micro/micro/v2/cmd/protoc-gen-micro@master
 ```
 
 ### Compile Proto
