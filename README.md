@@ -66,19 +66,17 @@ Find contributions from the community via the [explorer](https://micro.mu/explor
 
 All services require service discovery. The default is multicast DNS, a zeroconf system.
 
-If you need something multi-host or more resilient use consul.
-
-### Consul
+If you need something multi-host or more resilient use etcd.
 
 ```
 # install
-brew install consul
+go get -v go.etcd.io/etcd
 
 # run
-consul agent -dev
+etcd
 ```
 
-Use flag `--registry=consul` to enable the consul registry.
+Use env var `MICRO_REGISTRY=etcd` to enable the etcd registry.
 
 ## Protobuf
 
