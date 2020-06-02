@@ -51,7 +51,7 @@ Most likely needed examples
 
 ## Community
 
-Find contributions from the community via the [explorer](https://micro.mu/explore/)
+Find contributions from the community via the [explorer](https://micro.mu/projects/)
 
 - [go-shopping](https://github.com/autodidaddict/go-shopping) - A sample product with a suite of services
 - [shippy](https://github.com/EwanValentine/shippy) - A multi app demo and tutorial
