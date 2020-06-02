@@ -53,10 +53,6 @@ Most likely needed examples
 
 Find contributions from the community via the [explorer](https://micro.mu/projects/)
 
-- [go-shopping](https://github.com/autodidaddict/go-shopping) - A sample product with a suite of services
-- [shippy](https://github.com/EwanValentine/shippy) - A multi app demo and tutorial
-- [services](https://github.com/micro/services) - The home of Micro services
-
 ## Install
 
 Install [protoc](https://github.com/google/protobuf) for your environment. Then:
